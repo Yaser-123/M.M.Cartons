@@ -16,6 +16,8 @@
 
 <body>
 
+    <div id="Loader"></div>
+
     <!-- header section -->
 
     <header class="header">
@@ -399,6 +401,12 @@
 
     <!-- end -->
     <!-- custom js link -->
+          <script>
+          var loader = document.getElementById("Loader");
+          window.addEventListener("load", function(){
+            loader.style.display = "none";
+          })
+        </script>
     <script src="js/script.js"></script>
 </body>
 
