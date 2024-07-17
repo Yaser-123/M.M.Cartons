@@ -37,6 +37,14 @@ html::-webkit-scrollbar-thumb{
   background: var(--primary-color);
 }
 
+#Loader {
+  background: white url(../images/pre-loader.gif) no-repeat center center;
+  height: 100vh;
+  width: 100%;
+  position: fixed;
+  z-index: 100;
+}
+
 section{
   padding: 3rem 9%;
 }
