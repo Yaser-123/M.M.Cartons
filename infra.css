@@ -1,0 +1,138 @@
+
+        /* Embedded CSS for demonstration purposes */
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            padding: 0;
+            background-color: #f0f0f0;
+        }
+
+        .head{
+            position: fixed;
+            top: 0; left: 0; right: 0;
+            z-index: 1000;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 0.3rem 9%;
+            background: var(--main-color);
+          }
+          
+          .head .logo{
+            font-size: 2.2rem;
+            font-weight: bolder;
+            color: var(--white);
+          }
+          
+          
+          .head .logo img{
+            width: 45px;
+            height: 45px;
+            padding-right: .25rem;
+          }
+          
+          .head .navbar a{
+            font-size: 1.7rem;
+            margin-left: 2rem;
+            color: var(--white);
+            padding-block: .8rem;
+            position: relative;
+          }
+          
+          .head .navbar a::after{
+            content: '';
+            position: absolute;
+            background: var(--primary-color);
+            bottom: .5rem; left: 0;
+            width: 100%;
+            height: .2rem;
+            transform: scaleX(0);
+            transform-origin: left;
+            transition: 0.5s ease;
+          }
+          
+          .head .navbar a:is(:hover, :focus)::after{
+            transform: scaleX(1);
+          }
+          
+          #menu{
+            font-size: 2.5rem;
+            cursor: pointer;
+            color: var(--white);
+            display: none;
+          }
+          
+          /* end */
+
+        .main-content {
+            max-width: 1200px;
+            margin: 20px auto;
+            padding: 80px;
+            background-color: #fff;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            border-radius: 5px;
+        }
+
+        .main-content h1{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 18px;
+            font-size: 40px;
+            color: rgb(71, 5, 16);
+        }
+
+        .image-gallery {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            grid-gap: 20px;
+            margin-bottom: 20px;
+        }
+
+        .image {
+            text-align: center;
+        }
+
+        .image img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 5px;
+            box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+        }
+
+        .image p {
+            margin-top: 10px;
+            color: #666;
+            font-size: 20px;
+        }
+
+        .section-divider {
+            margin: 40px 0;
+            border-bottom: 2px solid #ccc;
+            text-align: center;
+        }
+
+        .content-boxes {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .content-box {
+            flex-basis: 45%;
+            padding: 20px;
+            background-color: #f9f9f9;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            text-align: justify;
+        }
+
+        footer {
+            text-align: center;
+            margin-top: 20px;
+            padding: 10px;
+            background-color: #333;
+            color: #fff;
+        }
+ 
