@@ -4,4 +4,4 @@ Disallow: /scripts/
 Disallow: /tmp/
 Allow: /
 
-Sitemap: https://m-m-cartons.vercel.app/sitemap.xml
+Sitemap: https://mmcartons.vercel.app/sitemap.xml
