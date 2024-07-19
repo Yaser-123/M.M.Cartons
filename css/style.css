@@ -141,26 +141,59 @@ section{
 
 .home {
   min-height: 110vh;
-  background: url(../images/Home.jpg) no-repeat;
+  background: url(../images/Home.jpg) no-repeat center center;
   background-size: cover;
   display: flex;
   align-items: center;
   justify-content: center;
-  text-align: center; /* Center text content */
-
-}
-
-
-.home .content{
   text-align: center;
+  padding-top: 5rem; /* Adjust this value based on your navbar height */
 }
 
-.home .content h3{
+.home .content {
+  text-align: center;
+  padding: 0 1rem; /* Add some padding for better spacing on smaller screens */
+}
+
+.home .content h3 {
   font-size: 7rem;
   text-transform: uppercase;
   font-weight: normal;
   color: var(--white);
   padding-bottom: 3.5rem;
+}
+
+@media (max-width: 1200px) {
+  .home {
+    padding-top: 4rem; /* Adjust top padding for medium screens */
+    min-height: 100vh;
+  }
+  .home .content h3 {
+    font-size: 5rem;
+    padding-bottom: 3rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .home {
+    padding-top: 3rem; /* Adjust top padding for small screens */
+    min-height: 90vh;
+  }
+  .home .content h3 {
+    font-size: 3rem;
+    padding-bottom: 2rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .home {
+    padding-top: 2rem; /* Adjust top padding for very small screens */
+    min-height: 80vh;
+  }
+  .home .content h3 {
+    font-size: 2rem;
+    padding-bottom: 1.5rem;
+  }
 }
 
 /* end */
@@ -708,10 +741,6 @@ form .btn2{
     margin-left: 2rem;
   }
 
-  .home .content h3{
-    font-size: 5rem;
-  }
-
   .book .content,
   .book .left{
     display: flex;
@@ -723,10 +752,6 @@ form .btn2{
 @media (max-width:450px){
   html{
     font-size: 50%;
-  }
-
-  .home .content h3{
-    font-size: 4rem;
   }
 
   .table .row .content .container{
