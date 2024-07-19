@@ -1,7 +1,4 @@
 User-agent: *
-Disallow: /admin/
-Disallow: /scripts/
-Disallow: /tmp/
 Allow: /
 
 Sitemap: https://mmcartons.vercel.app/sitemap.xml
